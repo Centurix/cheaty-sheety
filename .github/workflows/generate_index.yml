@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build the cheat sheet index
+      - name: Build the cheat sheet index.json
         run: echo Hello, world!

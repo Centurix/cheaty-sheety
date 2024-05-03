@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build the cheat sheet index.json
-        run: python -c 'print("hello mum")'
+        run: python ./build.py
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build
+          folder: .

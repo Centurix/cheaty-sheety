@@ -9,7 +9,7 @@ def main():
     with open("index.json", "w") as index_handle:
         json.dump(
             {
-                "sheets": [entry.name for entry in os.scandir(".") if entry.is_dir()]
+                "sheets": [entry.name for entry in os.scandir(".") if entry.is_dir() and entry.name != ".git"]
             },
             index_handle
         )

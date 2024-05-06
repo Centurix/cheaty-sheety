@@ -11,7 +11,7 @@ def main():
         json.dump(
             {
                 "sheets": [entry.name for entry in os.scandir(".") if entry.is_dir() and entry.name not in [".git", ".github"]],
-                "last_uopdated": int(time.time())
+                "last_updated": int(time.time())
             },
             index_handle
         )
